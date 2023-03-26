@@ -1,8 +1,8 @@
 package vehiculos;
 
-//import java.util.ArrayList;
-//import java.util.HashMap;
-//import java.util.Map;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Fabricante{
 	String nombre;
@@ -32,9 +32,9 @@ public class Fabricante{
 	
 	
 	public static Fabricante fabricaMayorVentas() {
-		//HashMap<String, Interger> cont newHashMap<String, Interger>();
+		HashMap<String, Interger> cont newHashMap<String, Interger>();
 		for (Fabricante fabricante: fabricantes) {
-			//if (cont.containsKey(fabricante.getNombre())){
+			if (cont.containsKey(fabricante.getNombre())){
 			cont.put(fabricante.getNombre(), cont.get(fabricante.getNombre())+1);
 		}else {
 			cont.put(fabricante.getNombre(), 1);
@@ -43,7 +43,7 @@ public class Fabricante{
 	
 	int mayor = 0;
 	String nombreFabricante = "";
-	for (Map.Entry<String, Interger> entry : cont.entrySet()){
+	for (Map.Entry<String, Interger> entry: cont.entrySet()){
 		if(entry.getValue() > mayor) {
 			mayor = entry.getValue();
 			nombreFabricante = entry.getKey();

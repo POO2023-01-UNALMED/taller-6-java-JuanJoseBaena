@@ -5,7 +5,7 @@ public class Automovil extends Vehiculo{
 	static int cantidadAutomoviles;
 	public Automovil (String placa, String nombre, float precio, float peso, Fabricante f, int puestos) {
 		super (placa, 4, 100, nombre, precio, peso "FWD", f);
-		this,puestos = puestos;
+		this.puestos = puestos;
 		cantidadAutomoviles +=1;
 	}
 	
