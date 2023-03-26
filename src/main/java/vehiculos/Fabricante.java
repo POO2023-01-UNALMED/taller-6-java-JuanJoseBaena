@@ -52,9 +52,10 @@ public class Fabricante{
 	for(Fabricante fabricante : fabricantes) {
 		if (fabricantes.getNombre().equals(nombref)) {
 			return fabricante;
-		}
+		}x
 	}
 	return null;
 	
 			
+ }
 }
